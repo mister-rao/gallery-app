@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gallery/gallery/widgets/gallery.dart';
+import 'package:gallery/gallery/gallery_photos.dart';
 import 'package:gallery/l10n/l10n.dart';
 
 class App extends StatelessWidget {
