@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gallery/counter/counter.dart';
+import 'package:gallery/gallery/widgets/gallery.dart';
 import 'package:gallery/l10n/l10n.dart';
 
 class App extends StatelessWidget {
@@ -8,6 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const GalleryPage(),
     );
   }
 }
